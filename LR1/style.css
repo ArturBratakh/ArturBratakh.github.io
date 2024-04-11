@@ -1,0 +1,95 @@
+/* Загальні стилі для всієї сторінки */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для заголовка */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* Стилі для секцій */
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+section.table {
+    overflow-x: auto; /* Дозволяє прокрутку на маленьких екранах */
+}
+
+/* Стилі для таблиць */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Стилі для зображення */
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Стилі для контактної інформації */
+
+.timetable table {
+    width: auto;
+}
+
+.timetable th, .timetable td {
+    padding: 8px;
+}
+
+/* Медіа-запити для респонсивного дизайну */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        padding: 10px 0;
+    }
+}
