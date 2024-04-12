@@ -1,0 +1,185 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.page-container {
+    max-width: 920px;
+    margin: 20px auto;
+}
+
+.left-side {
+    width: 27%;
+    height: 1040px;
+    background-color: #365486;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-side {
+    width: calc(73% - 6px);
+    float: right;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424769;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    float: left;
+    margin: 0 5px;
+}
+
+.navbar li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: #365486;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.separator {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: #EEF5FF;
+}
+
+.main-separator {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgba(220, 216, 216, 0.94);
+}
+
+.left-side-h1 {
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.right-side-h1 {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.left-side-h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.left-side-paragraph {
+    color: #ffffff;
+}
+
+.interests {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.interests li {
+    margin: 5px 5px 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.languages{
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.languages li {
+    font-weight: bold;
+}
+
+.language-level{
+    font-weight: normal;
+    float: right;
+}
+
+.name {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.work-places {
+    color: #000000;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.study {
+    color: #000000;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.work-period {
+    font-weight: normal;
+    float: right;
+    font-size: 22px;
+}
+
+.work-position {
+    font-weight: bold;
+}
+
+.work {
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.work-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.skills {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.my-works {
+    margin-left: 30px;
+    font-size: 24px;
+}
