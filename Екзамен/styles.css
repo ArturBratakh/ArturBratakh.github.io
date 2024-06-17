@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: teal;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "red green"
+        "blue green"
+        "blue yellow";
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: teal;
+}
+
+.box {
+    border: 2px solid black;
+}
+
+.red {
+    background-color: red;
+    grid-area: red;
+    width: 100px;
+    height: 100px;
+}
+
+.blue {
+    background-color: blue;
+    grid-area: blue;
+    width: 100px;
+    height: 200px;
+}
+
+.green {
+    background-color: green;
+    grid-area: green;
+    width: 200px;
+    height: 200px;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-area: yellow;
+    width: 200px;
+    height: 100px;
+}
