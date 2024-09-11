@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <small>Your password is between 4 and 12 characters</small>
+
+            <label for="input-text">Input Text Label</label>
+            <div class="input-error">
+                <input type="text" id="input-text" name="input-text" placeholder="Typing |">
+                <span class="error-icon">!</span>
+            </div>
+            <small class="error-message">Error message informing me of a problem</small>
+
+            <label>
+                <input type="checkbox" name="remember" id="remember">
+                Remember me
+            </label>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                Off
+            </label>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="radio" value="1">
+                    Radio selection 1
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="2" checked>
+                    Radio selection 2
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="3">
+                    Radio selection 3
+                </label>
+            </div>
+
+            <label for="dropdown">Dropdown Title</label>
+            <select id="dropdown" name="dropdown">
+                <option value="option1">Dropdown option</option>
+                <option value="option2">Dropdown option 1</option>
+                <option value="option3">Dropdown option 2</option>
+            </select>
+
+            <div class="buttons">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="next">Next</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
