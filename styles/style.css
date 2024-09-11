@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Світло-сірий фон */
+}
+
+header {
+    background-color: #333333; /* Графітовий для заголовка */
+    color: #fff; /* Білий текст */
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.left-side,
+.right-side {
+    width: 20%;
+}
+
+.button {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.button li {
+    margin-bottom: 15px;
+}
+
+.button li a {
+    display: inline-block;
+    width: 300px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: transparent; /* Прозорий фон */
+    color: #333333; /* Графітовий текст */
+    border: 2px solid #333333; /* Графітова окантовка */
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button li a:hover {
+    background-color: #333333; /* Графітовий фон при ховері */
+    color: #fff; /* Білий текст при ховері */
+}
