@@ -1,0 +1,46 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa; /* Світло-сірий фон */
+}
+
+h1, h2 {
+    color: #343a40; /* Темно-сірий текст */
+}
+
+.product {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Світло-сірий колір для обрамлення */
+    border-radius: 5px; /* Заокруглені кути */
+    background-color: #ffffff; /* Білий фон для товарів */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкий ефект тіні */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 300px; /* Ширина поля для введення */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Синій фон для кнопки */
+    color: white; /* Білий текст */
+    cursor: pointer; /* Зміна курсору на "вказівник" */
+}
+
+button:hover {
+    background-color: #0056b3; /* Темніший синій при наведенні */
+}
+
+#search-result {
+    margin-top: 20px; /* Відступ зверху */
+    font-weight: bold; /* Жирний шрифт */
+    color: #28a745; /* Зелений текст для результату */
+}

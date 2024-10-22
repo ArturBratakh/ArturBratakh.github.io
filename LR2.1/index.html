@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №2</title>
+    <link rel="stylesheet" href="styles/style1.css">
+    <script>
+        function showTask(taskNumber) {
+            switch(taskNumber) {
+                case 1:
+                    alert("Hello, world! (завдання 3.1)");
+                    break;
+                case 2:
+                    document.write("Hello, word! (завдання 3.2)");
+                    break;
+                case 3:
+                    alert("Завдання 3.3 виконується!");
+                    document.write("Hello, world! після OK");
+                    break;
+                case 4:
+                    let info = prompt("Введіть інформацію для завдання 3.4:");
+                    alert("Ви ввели: " + info);
+                    break;
+                case 5:
+                    let input = prompt("Введіть текст для завдання 3.5:");
+                    document.write("Ви ввели: " + input);
+                    break;
+                case 6:
+                    let num1 = parseInt(prompt("Перше число:"));
+                    let num2 = parseInt(prompt("Друге число:"));
+                    alert("Сума: " + (num1 + num2));
+                    break;
+                case 7:
+                    let number1 = parseInt(prompt("Перше число:"));
+                    let number2 = parseInt(prompt("Друге число:"));
+                    let max = number1 > number2 ? number1 : number2;
+                    document.write("Найбільше число: " + max);
+                    break;
+                case 8:
+                    let month = parseInt(prompt("Номер місяця:"));
+                    let season;
+                    if (month == 12 || month == 1 || month == 2) {
+                        season = "Зима";
+                    } else if (month >= 3 && month <= 5) {
+                        season = "Весна";
+                    } else if (month >= 6 && month <= 8) {
+                        season = "Літо";
+                    } else if (month >= 9 && month <= 11) {
+                        season = "Осінь";
+                    } else {
+                        season = "Неправильний номер місяця";
+                    }
+                    document.write("Пора року: " + season);
+                    break;
+                case 9:
+                    if (confirm("Ви бажаєте продовжити?")) {
+                        document.write("Ви натиснули OK.");
+                    } else {
+                        document.write("Ви натиснули Відміна.");
+                    }
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Лабораторна робота №2</h1>
+    </header>
+
+    <section>
+        <h2>Виберіть завдання для виконання:</h2>
+        <button onclick="showTask(1)">Завдання 3.1</button>
+        <button onclick="showTask(2)">Завдання 3.2</button>
+        <button onclick="showTask(3)">Завдання 3.3</button>
+        <button onclick="showTask(4)">Завдання 3.4</button>
+        <button onclick="showTask(5)">Завдання 3.5</button>
+        <button onclick="showTask(6)">Завдання 3.6</button>
+        <button onclick="showTask(7)">Завдання 3.7</button>
+        <button onclick="showTask(8)">Завдання 3.8</button>
+        <button onclick="showTask(9)">Завдання 3.9</button>
+    </section>
+</body>
+
+</html>

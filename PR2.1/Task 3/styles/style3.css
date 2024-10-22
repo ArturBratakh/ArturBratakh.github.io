@@ -1,0 +1,36 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa; /* Світло-сірий фон */
+    text-align: center; /* Центрування тексту */
+}
+
+h1, h2 {
+    color: #343a40; /* Темно-сірий текст */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Синій фон для кнопки */
+    color: white; /* Білий текст */
+    cursor: pointer; /* Зміна курсору на "вказівник" */
+    margin: 10px; /* Відступ між кнопками */
+    font-size: 16px; /* Розмір шрифту */
+}
+
+button:hover {
+    background-color: #0056b3; /* Темніший синій при наведенні */
+}
+
+.employee {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Світло-сірий колір для обрамлення */
+    border-radius: 5px; /* Заокруглені кути */
+    background-color: #ffffff; /* Білий фон для працівників */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкий ефект тіні */
+}
