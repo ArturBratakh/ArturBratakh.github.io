@@ -1,0 +1,116 @@
+@import "./variables";
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.logo {
+    max-width: 10.5rem;
+    width: 100%;
+}
+
+nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0 10px;
+    margin: 0 auto;    
+    min-height: 76px;
+    padding: 22px 0;
+    font-family: "DM sans", sans-serif;
+    transition: .5s all ease-in-out;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.scrolled {
+    background-color: #121212;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    min-width: 250px;
+    width: 40%;
+    max-width: 350px;
+    li {
+        list-style: none;
+    }
+    a {
+        color: $font-color;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: calc(100vh - 76px);
+        top: 76px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+        li {
+            opacity: 0;
+        }
+    }
+    .burger {
+        display: block;
+    }
+    nav {
+        padding: 22px 20px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+    z-index: 100;
+    background-color: $light-black;
+    li {
+        opacity: 1;
+    }
+}
+
+.nav-light {
+    background-color: $white;
+    .nav-links {
+        a {
+            color: $light-black;
+        }
+    }
+    .nav-active {
+        background-color: $font-color;
+    }
+}
