@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc; /* Світлий, але трохи насичений фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px; /* Збільшений радіус для більш округлих кутів */
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Трохи більша тінь */
+    text-align: center;
+    width: 350px; /* Збільшена ширина для більшої зручності */
+    box-sizing: border-box;
+}
+
+#score {
+    font-size: 18px; /* Збільшений розмір для кращої читабельності */
+    margin-bottom: 15px;
+    color: #333; /* Темно-сірий текст */
+    font-weight: bold;
+}
+
+.task {
+    font-size: 20px; /* Збільшений розмір для задачі */
+    margin-bottom: 15px;
+    color: #555; /* Помірний сірий */
+    font-weight: 600;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px; /* Трохи збільшений внутрішній відступ */
+    margin-bottom: 15px; /* Трохи більший відступ між елементами */
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Більш округлі поля */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Додано ефект тіні при фокусі */
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Яскравий синій при фокусі */
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4); /* Легка тінь при фокусі */
+    outline: none;
+}
+
+.btn {
+    padding: 12px 20px; /* Більший відступ для зручності натискання */
+    background-color: #6c757d; /* Сірий фон */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Додано плавну зміну кольору та ефект натискання */
+}
+
+.btn:hover {
+    background-color: #5a6268; /* Темніший сірий при наведенні */
+    transform: scale(1.05); /* Легке збільшення при наведенні */
+}
+
+.result {
+    font-size: 16px; /* Трохи більший текст для результату */
+    color: #e63946; /* Насичений червоний для помилок */
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}

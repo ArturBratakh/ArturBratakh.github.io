@@ -1,0 +1,96 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7fb; /* Трохи світліший фон для кращого контрасту */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Темний текст для кращої читабельності */
+}
+
+/* Стиль для основного контейнера */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Картка, яка містить форму */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Легка більша тінь для кращого ефекту */
+    padding: 40px;
+    text-align: center;
+    max-width: 420px; /* Трохи ширша картка */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Заголовок */
+h1 {
+    color: #333;
+    font-size: 26px; /* Збільшено розмір заголовку */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Стилі для полів введення та підписів */
+label {
+    display: block;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 8px; /* Трохи зменшено відступ */
+    font-weight: 500;
+}
+
+/* Стилі для текстових полів введення */
+input[type="text"] {
+    width: 100%;
+    padding: 14px 18px; /* Трохи більші відступи для полів */
+    margin-bottom: 25px; /* Трохи більший відступ між полями */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Стилі для полів при фокусі */
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Легка тінь при фокусі */
+}
+
+/* Додатковий стиль для приємного вигляду */
+input::placeholder {
+    color: #aaa;
+    font-style: italic; /* Італік стиль для плейсхолдера */
+}
+
+/* Стилі для кнопки, якщо вона є */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Темніший синій при ховері */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

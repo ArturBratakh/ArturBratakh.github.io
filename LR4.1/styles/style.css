@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Світло-сірий фон */
+}
+
+header {
+    background-color: #222222; /* Темно-графітовий для заголовка */
+    color: #ffffff; /* Білий текст */
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Тінь для шапки */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Простір між кнопками */
+}
+
+.buttons li {
+    flex: 1 0 300px; /* Кнопки займають мінімум 300px ширини */
+    text-align: center;
+}
+
+.buttons li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #222222; /* Темно-графітовий текст */
+    background-color: transparent; /* Прозорий фон */
+    border: 2px solid #222222; /* Темно-графітова окантовка */
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.buttons li a:hover {
+    background-color: #222222; /* Темно-графітовий фон при ховері */
+    color: #ffffff; /* Білий текст при ховері */
+}
+
+button {
+    display: block;
+    padding: 15px 20px;
+    margin: 15px auto;
+    background-color: transparent; /* Прозорий фон */
+    color: #222222; /* Темно-графітовий текст */
+    border: 2px solid #222222; /* Темно-графітова окантовка */
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 300px;
+}
+
+button:hover {
+    background-color: #222222; /* Темно-графітовий фон при ховері */
+    color: #ffffff; /* Білий текст при ховері */
+}

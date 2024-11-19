@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc; /* Світлий фон для кращого контрасту */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px; /* Більш округлі кути */
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Легка більша тінь */
+    text-align: center;
+    width: 350px; /* Збільшена ширина */
+    box-sizing: border-box;
+}
+
+#score {
+    font-size: 18px; /* Збільшений розмір для читабельності */
+    margin-bottom: 15px;
+    color: #333; /* Темно-сірий текст */
+    font-weight: bold;
+}
+
+.task {
+    font-size: 20px; /* Збільшено для акценту */
+    margin-bottom: 15px;
+    color: #555; /* Нейтральний сірий */
+    font-weight: 600;
+}
+
+.answersForm {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #444; /* Легка зміна кольору для читабельності */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #6c757d; /* Додано сірий колір для чекбоксів */
+}
+
+input[type="radio"]:hover {
+    cursor: pointer; /* Інтерактивний ефект */
+}
+
+.btn {
+    padding: 12px 18px; /* Трохи більші відступи */
+    background-color: #6c757d; /* Сірий фон для кнопок */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Більш округлі кути */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Плавна анімація */
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #5a6268; /* Темніший сірий при ховері */
+    transform: scale(1.05); /* Легке збільшення */
+}
+
+.result {
+    font-size: 16px; /* Збільшено для акценту */
+    color: #e63946; /* Яскравий червоний для помилок або результатів */
+    margin-top: 15px;
+    font-weight: bold;
+}
